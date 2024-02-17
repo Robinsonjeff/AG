@@ -1,0 +1,223 @@
+import { useState, useRef } from "react";
+
+import Header from "./Components/Browser/Header";
+import HeaderImage from "./Components/Browser/HeaderImage";
+import HeaderText from "./Components/Browser/HeaderText";
+import AboutUs from "./Components/Browser/AboutUs";
+import InfoContainer from "./Components/Browser/InfoContainer";
+import ChooseUs from "./Components/Browser/ChooseUs";
+import WhereWeService from "./Components/Browser/WhereWeService";
+import FAQ from "./Components/Browser/FAQ";
+
+import { BrowserView, MobileView } from "react-device-detect";
+import NavigationBar from "./Components/Mobile/NavigationBar";
+
+// import { colors } from "./Components/Colors";
+
+function App() {
+  // const handleBookNowClick = () => {
+  //   window.open(
+  //     "https://book.housecallpro.com/book/AlphaGuard/4aa60453411449049d25a2b4894894b0",
+  //     "_blank"
+  //   );
+  // };
+
+  // const mobileNavigation = [
+  //   { title: "About Us", click: () => console.log("click") },
+  //   { title: "Why Choose Us", click: () => console.log("click") },
+  //   { title: "Where We Service", click: () => console.log("click") },
+  //   { title: "FAQ", click: () => console.log("click") },
+  //   { title: "Book Now", click: handleBookNowClick },
+  // ];
+
+  // let selectedIndex = -1;
+
+  const navBarRef = useRef(null);
+
+  const [showAboutUs, setShowAboutUs] = useState(true);
+  const [showChooseUs, setShowChooseUs] = useState(false);
+  const [showWhereWeService, setShowWhereWeService] = useState(false);
+  const [showFAQ, setShowFAQ] = useState(false);
+
+  // const [aboutUsIsHoverd, setAboutUsHoverd] = useState(false);
+  // const [chooseUsIsHoverd, setChooseUsHoverd] = useState(false);
+  // const [whereWeServiceHoverd, setWhereWeServiceHoverd] = useState(false);
+  // const [faqIsHoverd, setFaqIsHoverd] = useState(false);
+
+  const infoContainerRef = useRef(null);
+
+  const handleAboutUsClick = () => {
+    setShowChooseUs(false);
+    setShowAboutUs(true);
+    setShowWhereWeService(false);
+    setShowFAQ(false);
+    infoContainerRef.current.scrollIntoView({
+      behavior: "smooth",
+      display: "block",
+      inline: "center",
+    });
+  };
+
+  const handleChooseUsClick = () => {
+    setShowAboutUs(false);
+    setShowChooseUs(true);
+    setShowWhereWeService(false);
+    setShowFAQ(false);
+    infoContainerRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleWhereWeServiceCick = () => {
+    setShowChooseUs(false);
+    setShowAboutUs(false);
+    setShowWhereWeService(true);
+    setShowFAQ(false);
+    infoContainerRef.current.scrollIntoView({
+      behavior: "smooth",
+      display: "block",
+      inline: "center",
+    });
+  };
+
+  const handleFAQClick = () => {
+    setShowAboutUs(false);
+    setShowChooseUs(false);
+    setShowWhereWeService(false);
+    setShowFAQ(true);
+    infoContainerRef.current.scrollIntoView({
+      behavior: "smooth",
+      display: "block",
+      inline: "center",
+    });
+  };
+
+  return (
+    <>
+      <BrowserView>
+        <Header />
+        {/* This is the nav bar */}
+        <div
+          ref={navBarRef}
+          style={{
+            width: "100vw",
+            backgroundColor: "#687c70",
+            height: 60,
+            display: "flex",
+            paddingRight: 40,
+            // position: isSticky ? "fixed" : "relative",
+            // top: 0,
+            // left: 0,
+            // right: 0,
+            // zIndex: 1000,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              // color: aboutUsIsHoverd ? colors.lightGreen : "white",
+              color: "white",
+              height: "100%",
+              marginRight: 8,
+              cursor: "pointer",
+              marginLeft: "5%",
+            }}
+            onClick={handleAboutUsClick}
+            // onMouseEnter={() => setAboutUsHoverd(true)}
+            // onMouseOut={() => setAboutUsHoverd(false)}
+          >
+            <h6 style={{ marginTop: 8, fontWeight: "bold" }}>About Us</h6>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+              height: "100%",
+              marginRight: 8,
+              cursor: "pointer",
+              marginLeft: "5%",
+            }}
+            onClick={handleChooseUsClick}
+            onMouseEnter={() => console.log("mouse over")}
+          >
+            <h6 style={{ marginTop: 8, fontWeight: "bold" }}>Why Choose Us</h6>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+              height: "100%",
+              marginRight: 8,
+              cursor: "pointer",
+              marginLeft: "5%",
+            }}
+            onClick={handleWhereWeServiceCick}
+            onMouseEnter={() => console.log("mouse over")}
+          >
+            <h6 style={{ marginTop: 8, fontWeight: "bold" }}>
+              Where We Service
+            </h6>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+              height: "100%",
+              marginRight: 8,
+              cursor: "pointer",
+              marginLeft: "5%",
+            }}
+            onClick={handleFAQClick}
+            onMouseEnter={() => console.log("mouse over")}
+          >
+            <h6 style={{ marginTop: 8, fontWeight: "bold" }}>FAQ</h6>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+              height: "100%",
+              marginRight: 8,
+              marginLeft: "5%",
+            }}
+          >
+            <a
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontWeight: "bold",
+              }}
+              href={"mailto:coletista7@gmail.com"}
+            >
+              Email Us
+            </a>
+          </div>
+        </div>
+        <HeaderImage>
+          <HeaderText></HeaderText>
+        </HeaderImage>
+        <div ref={infoContainerRef}>
+          <InfoContainer>
+            {showAboutUs && <AboutUs />}
+            {showChooseUs && <ChooseUs />}
+            {showWhereWeService && <WhereWeService />}
+            {showFAQ && <FAQ />}
+          </InfoContainer>
+        </div>
+      </BrowserView>
+      <MobileView>
+        <NavigationBar />
+      </MobileView>
+    </>
+  );
+}
+
+export default App;
