@@ -1,5 +1,6 @@
 import React from "react";
 import aboutUsHeaderImage from "../../Assets/AGGuy.JPG";
+import { colors } from "../Colors";
 
 function MobileAboutUs(props) {
   return (
@@ -31,6 +32,12 @@ function MobileAboutUs(props) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          backgroundColor: colors.darkGreen,
+          color: "#dcdcde",
+          border: "3px solid #747474",
+          paddingTop: 5,
+          paddingLeft: 5,
+          borderRadius: 10,
         }}
       >
         <h6>

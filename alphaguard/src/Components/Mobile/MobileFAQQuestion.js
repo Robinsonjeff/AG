@@ -22,7 +22,7 @@ function MobileFAQQuestion({ question, answer, height }) {
       <div
         style={{
           width: "95vw",
-          height: "7vh",
+          height: "11vh",
           backgroundColor: colors.smoke,
           color: colors.darkGreen,
           display: "flex",
@@ -30,7 +30,7 @@ function MobileFAQQuestion({ question, answer, height }) {
           alignItems: "center",
           marginLeft: 5,
           marginRight: 5,
-          marginBottom: 10,
+          marginTop: 10,
           paddingLeft: 10,
           paddingRight: 10,
           border: "2px solid #143622",
@@ -44,7 +44,7 @@ function MobileFAQQuestion({ question, answer, height }) {
       </div>
       <div
         style={{
-          width: "98%",
+          width: "94vw",
           height: clicked ? height : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,

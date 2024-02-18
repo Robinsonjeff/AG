@@ -45,7 +45,6 @@ const HeaderText = () => {
           <h1
             style={{
               marginTop: 25,
-              marginBottom: 20,
               fontWeight: "bold",
               fontSize: 80,
             }}
@@ -53,7 +52,7 @@ const HeaderText = () => {
             AlphaGuard
           </h1>
 
-          <h3 style={{ marginBottom: "20%" }}>Leave your pests in the past</h3>
+          <h3 style={{ marginBottom: "10%" }}>Leave your pests in the past</h3>
 
           {/* Book now button div */}
           <div

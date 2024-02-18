@@ -13,7 +13,7 @@ function MobileWhyChooseUs(props) {
   return (
     <div
       style={{
-        width: "97.9vw",
+        width: "97.6vw",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

@@ -1,13 +1,13 @@
 import React from "react";
 
-const InfoContainer = ({ children }) => {
+const MobileInfoContainer = ({ children }) => {
   return (
     <div
       style={{
         display: "flex",
         justifyContent: "center",
         marginTop: 3,
-        minHeight: "30vh",
+        minHeight: "95vh",
       }}
     >
       <div
@@ -35,4 +35,4 @@ const InfoContainer = ({ children }) => {
   );
 };
 
-export default InfoContainer;
+export default MobileInfoContainer;

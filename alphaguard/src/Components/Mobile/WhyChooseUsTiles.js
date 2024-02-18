@@ -8,6 +8,8 @@ function WhyChooseUsTiles({ icon, bodyText, children }) {
       style={{
         backgroundColor: colors.darkGreen,
         borderRadius: 25,
+        border: "3px solid #747474",
+        boxShadow: " 0px 5px 5px 0px black",
         width: "80vw",
         height: "20%",
         marginTop: 10,

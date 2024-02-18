@@ -21,6 +21,7 @@ import AboutUs from "./Components/Browser/AboutUs";
 import ChooseUs from "./Components/Browser/ChooseUs";
 import WhereWeService from "./Components/Browser/WhereWeService";
 import FAQ from "./Components/Browser/FAQ";
+import MobileInfoContainer from "./Components/Mobile/MobileInfoContainer";
 
 function App() {
   const [navClick, setNavClick] = useState(false);
@@ -169,8 +170,6 @@ function App() {
               cursor: "pointer",
               marginLeft: "5%",
             }}
-            onClick={handleChooseUsClickBrowser}
-            onMouseEnter={() => console.log("mouse over")}
           >
             <h6 style={{ marginTop: 8, fontWeight: "bold" }}>Why Choose Us</h6>
           </div>
@@ -186,7 +185,6 @@ function App() {
               marginLeft: "5%",
             }}
             onClick={handleWhereWeServiceCickBrowser}
-            onMouseEnter={() => console.log("mouse over")}
           >
             <h6 style={{ marginTop: 8, fontWeight: "bold" }}>
               Where We Service
@@ -370,12 +368,12 @@ function App() {
             ref={infoContainerRef}
             style={{ position: "absolute", top: "7vh" }}
           >
-            <InfoContainer>
+            <MobileInfoContainer>
               {showAboutUs && <MobileAboutUs />}
               {showChooseUs && <MobileWhyChooseUs />}
               {showWhereWeService && <MobileWhereWeService />}
               {showFAQ && <MobileFAQ />}
-            </InfoContainer>
+            </MobileInfoContainer>
           </div>
         </div>
       </MobileView>
