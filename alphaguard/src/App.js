@@ -170,6 +170,7 @@ function App() {
               cursor: "pointer",
               marginLeft: "5%",
             }}
+            onClick={handleChooseUsClickBrowser}
           >
             <h6 style={{ marginTop: 8, fontWeight: "bold" }}>Why Choose Us</h6>
           </div>
