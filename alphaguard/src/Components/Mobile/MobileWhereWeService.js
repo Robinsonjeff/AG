@@ -45,12 +45,12 @@ function MobileWhereWeService(props) {
             width: "95%",
             borderRadius: 10,
             marginTop: 25,
-            backgroundColor: colors.lightGreen,
+            backgroundColor: colors.darkGreen,
             border: "3px solid black",
             color: "#eaebea",
           }}
         >
-          <h6 style={{ lineHeight: 1.5 }}>
+          <h6 style={{ lineHeight: 2 }}>
             Discover AlphaGuard Pest Solutions, your top choice for pest control
             in St. Charles and St. Louis. Count on our expert team to tackle
             pests with precision and tailored solutions for your home or
