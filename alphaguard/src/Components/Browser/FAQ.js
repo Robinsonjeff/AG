@@ -179,7 +179,7 @@ function FAQ(props) {
       <div
         style={{
           width: "90%",
-          height: div1 ? 100 : 0,
+          height: div1 ? 140 : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,
           overflow: "hidden",
@@ -189,7 +189,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           Pests can pose significant health risks, from triggering allergies to
           transmitting diseases. At AlphaGuard Pest Solutions, our comprehensive
           treatments not only eliminate pests but also prioritize your family's
@@ -240,7 +240,7 @@ function FAQ(props) {
       <div
         style={{
           width: "90%",
-          height: div2 ? 100 : 0,
+          height: div2 ? 200 : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,
           overflow: "hidden",
@@ -250,7 +250,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           Yes, our pest control techniques are pet-friendly and environmentally
           conscious. We utilize advanced, eco-friendly solutions that
           effectively target pests while minimizing any adverse effects on your
@@ -304,7 +304,7 @@ function FAQ(props) {
       <div
         style={{
           width: "90%",
-          height: div3 ? 100 : 0,
+          height: div3 ? 200 : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,
           overflow: "hidden",
@@ -314,7 +314,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           Absolutely. Prevention is key in pest control. Regular maintenance
           treatments help maintain a pest-free environment, preventing
           infestations before they become noticeable. Whenever you spot an
@@ -370,7 +370,7 @@ function FAQ(props) {
       <div
         style={{
           width: "90%",
-          height: div4 ? 100 : 0,
+          height: div4 ? 140 : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,
           overflow: "hidden",
@@ -380,7 +380,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           Yes, our services cater to both residential and commercial clients.
           Whether it's your home or business, AlphaGuard Pest Solutions provides
           comprehensive pest control solutions tailored to your property's
@@ -432,7 +432,7 @@ function FAQ(props) {
       <div
         style={{
           width: "90%",
-          height: div5 ? 100 : 0,
+          height: div5 ? 220 : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,
           overflow: "hidden",
@@ -442,7 +442,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           We stand by the effectiveness of our treatments. AlphaGuard Pest
           Solutions offers guarantees and warranties on our services, ensuring
           that if pest problems persist, we'll return to re-treat the affected
@@ -509,7 +509,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           AlphaGuard Pest Solutions offers competitive pricing without
           compromising on quality. Additionally, we provide flexible payment
           options to ensure our services remain accessible and affordable for
@@ -561,7 +561,7 @@ function FAQ(props) {
       <div
         style={{
           width: "90%",
-          height: div7 ? 100 : 0,
+          height: div7 ? 140 : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,
           overflow: "hidden",
@@ -571,7 +571,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           Bugs are a big part of life in Missouri. Since pests never stop
           looking for food and harborage, and pest control products only provide
           temporary results, services work best when performed on a regular
@@ -624,7 +624,7 @@ function FAQ(props) {
       <div
         style={{
           width: "90%",
-          height: div8 ? 100 : 0,
+          height: div8 ? 140 : 0,
           transition: "height 1s ease-in-out",
           backgroundColor: colors.lightGrey,
           overflow: "hidden",
@@ -634,7 +634,7 @@ function FAQ(props) {
           paddingLeft: 10,
         }}
       >
-        <h5>
+        <h5 style={{ lineHeight: 2 }}>
           No there isn’t a need to be home. Most of our pest control programs
           are designed to control pests from the outside before they get in.
           This means fewer pesticides used inside the home and less scheduling

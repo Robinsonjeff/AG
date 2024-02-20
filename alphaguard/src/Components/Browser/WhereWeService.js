@@ -45,7 +45,7 @@ function WhereWeService(props) {
         <img src={locationImage} alt="where we service map"></img>
       </div>
       <div style={{ paddingLeft: 10, width: "70%", marginTop: 25 }}>
-        <h6>
+        <h6 style={{ lineHeight: 2 }}>
           Discover AlphaGuard Pest Solutions, your top choice for pest control
           in St. Charles and St. Louis. Count on our expert team to tackle pests
           with precision and tailored solutions for your home or business. From
