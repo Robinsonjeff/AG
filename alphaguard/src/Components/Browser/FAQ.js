@@ -115,9 +115,18 @@ function FAQ(props) {
         paddingTop: 10,
         paddingBottom: 10,
         marginLeft: "10%",
+        paddingRight: 50,
       }}
     >
       <h4 style={{ color: colors.darkGreen }}>Frequently Asked Questions</h4>
+      <div
+        style={{
+          width: "23vw",
+          height: 4,
+          backgroundColor: colors.darkGreen,
+          marginBottom: 15,
+        }}
+      ></div>
 
       {/* First question div */}
       <div
@@ -140,6 +149,7 @@ function FAQ(props) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            width: "35%",
           }}
         >
           <h5

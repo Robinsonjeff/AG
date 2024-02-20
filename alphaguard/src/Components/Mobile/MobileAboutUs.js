@@ -22,7 +22,7 @@ function MobileAboutUs(props) {
         <img
           src={aboutUsHeaderImage}
           alt="About Us header"
-          style={{ borderRadius: 20 }}
+          style={{ borderRadius: 50 }}
         ></img>
       </div>
       {/* Text div */}

@@ -1,6 +1,5 @@
 import React from "react";
 
-import aboutUsimg1 from "../../Assets/AGGuy.JPG";
 import aboutUsimg2 from "../../Assets/AboutUsImage.jpg";
 
 const AboutUs = () => {
@@ -81,6 +80,7 @@ const AboutUs = () => {
             style={{
               width: "40%",
               marginTop: 10,
+              marginBottom: 20,
               color: "#747e74",
               display: "flex",
               flexDirection: "column",
@@ -133,60 +133,6 @@ const AboutUs = () => {
         }}
       >
         {/* Text div */}
-
-        <div
-          style={{
-            width: "30%",
-            marginTop: 10,
-            color: "#747e74",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginRight: 5,
-            paddingRight: 20,
-            paddingLeft: 20,
-            // backgroundColor: "green",
-          }}
-        ></div>
-        <div
-          style={{
-            width: "70%",
-            marginTop: 10,
-            color: "#747e74",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            paddingRight: 20,
-            paddingLeft: 20,
-            // backgroundColor: "blue",
-          }}
-        >
-          <h6></h6>
-        </div>
-      </div>
-      <div
-        style={{
-          // backgroundColor: "red",
-          display: "flex",
-        }}
-      >
-        {/* Text div */}
-
-        <div
-          style={{
-            width: "70%",
-            marginTop: 10,
-            color: "#747e74",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            paddingRight: 20,
-            paddingLeft: 20,
-            // backgroundColor: "blue",
-          }}
-        >
-          <h6></h6>
-        </div>
       </div>
 
       {/* <div style={{ height: 400, width: "50%" }}>

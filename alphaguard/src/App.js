@@ -373,7 +373,11 @@ function App() {
               {showAboutUs && <MobileAboutUs />}
               {showChooseUs && <MobileWhyChooseUs />}
               {showWhereWeService && <MobileWhereWeService />}
-              {showFAQ && <MobileFAQ />}
+              {showFAQ && (
+                <div style={{ paddingBottom: 30 }}>
+                  <MobileFAQ />
+                </div>
+              )}
             </MobileInfoContainer>
           </div>
         </div>
