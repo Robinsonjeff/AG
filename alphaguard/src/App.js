@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { colors } from "../src/Components/Colors";
-import navImage from "./Assets/IMG_5664.PNG";
+import navImage from "./Assets/header.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Navigators from "./Components/Mobile/Navigators";
