@@ -22,6 +22,10 @@ import ChooseUs from "./Components/Browser/ChooseUs";
 import WhereWeService from "./Components/Browser/WhereWeService";
 import FAQ from "./Components/Browser/FAQ";
 import MobileInfoContainer from "./Components/Mobile/MobileInfoContainer";
+// import Footer from "./Components/Footer";
+// import FooterItems from "./Components/FooterItems";
+
+// import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   const [navClick, setNavClick] = useState(false);
@@ -379,6 +383,9 @@ function App() {
                 </div>
               )}
             </MobileInfoContainer>
+            {/* <Footer>
+              <FooterItems icon={faInstagram} />
+            </Footer> */}
           </div>
         </div>
       </MobileView>

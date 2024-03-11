@@ -6,9 +6,9 @@ function WhyChooseUsTiles({ icon, bodyText, children }) {
   return (
     <div
       style={{
-        backgroundColor: colors.darkGreen,
+        backgroundColor: colors.smoke,
         borderRadius: 25,
-        border: "3px solid #747474",
+        // border: "3px solid #747474",
         boxShadow: " 0px 5px 5px 0px black",
         width: "80vw",
         height: "20%",
@@ -26,9 +26,23 @@ function WhyChooseUsTiles({ icon, bodyText, children }) {
           display: "flex",
           flexDirection: "column",
           paddingTop: 10,
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <FontAwesomeIcon icon={icon} />
+        <div
+          style={{
+            backgroundColor: colors.darkGreen,
+            borderRadius: 50,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: 50,
+            height: 50,
+          }}
+        >
+          <FontAwesomeIcon icon={icon} />
+        </div>
         <div
           style={{
             textAlign: "center",
@@ -37,6 +51,7 @@ function WhyChooseUsTiles({ icon, bodyText, children }) {
             display: "flex",
             flexDirection: "column",
             paddingBottom: 10,
+            color: colors.darkGreen,
           }}
         >
           {children}
@@ -44,7 +59,15 @@ function WhyChooseUsTiles({ icon, bodyText, children }) {
       </div>
       <div
         style={{
-          backgroundColor: "white",
+          height: 120,
+          width: 7,
+          backgroundColor: colors.darkGreen,
+          marginLeft: 15,
+        }}
+      ></div>
+      <div
+        style={{
+          backgroundColor: colors.darkGreen,
           height: "90%",
           width: 2,
           marginLeft: 7,
@@ -53,7 +76,7 @@ function WhyChooseUsTiles({ icon, bodyText, children }) {
       ></div>
       <div
         style={{
-          color: "white",
+          color: colors.darkGreen,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
