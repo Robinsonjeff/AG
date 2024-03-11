@@ -57,14 +57,7 @@ function WhyChooseUsTiles({ icon, bodyText, children }) {
           {children}
         </div>
       </div>
-      <div
-        style={{
-          height: 120,
-          width: 7,
-          backgroundColor: colors.darkGreen,
-          marginLeft: 15,
-        }}
-      ></div>
+
       <div
         style={{
           backgroundColor: colors.darkGreen,
