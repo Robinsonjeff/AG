@@ -147,7 +147,6 @@ function FAQ(props) {
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
             alignItems: "center",
             width: "35%",
           }}
