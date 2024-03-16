@@ -1,6 +1,7 @@
 import React from "react";
 
 import aboutUsimg2 from "../../Assets/AboutUsImage.jpg";
+import { colors } from "../Colors";
 
 const AboutUs = () => {
   return (
@@ -81,7 +82,7 @@ const AboutUs = () => {
               width: "40%",
               marginTop: 10,
               marginBottom: 20,
-              color: "#747e74",
+              color: colors.darkGreen,
               display: "flex",
               flexDirection: "column",
 

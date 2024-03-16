@@ -228,7 +228,7 @@ function App() {
                 color: "white",
                 fontWeight: "bold",
               }}
-              href={"mailto:coletista7@gmail.com"}
+              href={"mailto:alphaguardps@gmail.com"}
             >
               Email Us
             </a>

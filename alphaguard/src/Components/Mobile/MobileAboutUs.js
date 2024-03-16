@@ -28,13 +28,21 @@ function MobileAboutUs(props) {
       {/* Text div */}
       <div
         style={{
+          width: "80vw",
+          height: 4,
+          backgroundColor: colors.darkGreen,
+          marginBottom: 10,
+        }}
+      ></div>
+      <div
+        style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: colors.darkGreen,
-          color: "#dcdcde",
-          border: "3px solid #747474",
+
+          color: colors.darkGreen,
+
           paddingTop: 5,
           paddingLeft: 5,
           borderRadius: 10,
