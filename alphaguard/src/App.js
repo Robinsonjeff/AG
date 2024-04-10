@@ -392,7 +392,7 @@ function App() {
             <Footer>
               <FooterItems
                 icon={faInstagram}
-                navItem={"https://www.instagram.com/alphaguardps/"}
+                navItem={"instagram://user?screen_name=AlphaGuardPS"}
               />
               <FooterItems
                 icon={faXTwitter}
