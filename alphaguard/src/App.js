@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { colors } from "../src/Components/Colors";
 import navImage from "./Assets/header.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Navigators from "./Components/Mobile/Navigators";
 import InfoContainer from "./Components/Browser/InfoContainer";
 import MobileAboutUs from "./Components/Mobile/MobileAboutUs";
@@ -25,7 +25,13 @@ import MobileInfoContainer from "./Components/Mobile/MobileInfoContainer";
 import Footer from "./Components/Footer";
 import FooterItems from "./Components/FooterItems";
 
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faTiktok,
+  faXTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   const [navClick, setNavClick] = useState(false);
@@ -388,7 +394,28 @@ function App() {
                 icon={faInstagram}
                 navItem={"https://www.instagram.com/alphaguardps/"}
               />
-              <FooterItems icon={faPhone} />
+              <FooterItems
+                icon={faXTwitter}
+                navItem={"https://twitter.com/AlphaGuardPS"}
+              />
+              <FooterItems
+                icon={faTiktok}
+                navItem={
+                  "https://www.tiktok.com/@alphaguardpestsolutions?is_from_webapp=1&sender_device=pc"
+                }
+              />
+              <FooterItems
+                icon={faYoutube}
+                navItem={
+                  "https://www.youtube.com/channel/UCXeTmM4f_Jl2vdgwNEA_Iew"
+                }
+              />
+              <FooterItems
+                icon={faFacebook}
+                navItem={
+                  "https://www.facebook.com/profile.php?id=61555161394690&mibextid=LQQJ4d"
+                }
+              />
             </Footer>
           </div>
         </div>
