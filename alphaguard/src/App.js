@@ -396,7 +396,7 @@ function App() {
               />
               <FooterItems
                 icon={faXTwitter}
-                navItem={"https://twitter.com/AlphaGuardPS"}
+                navItem={"twitter://user?screen_name=AlphaGuardPS"}
               />
               <FooterItems
                 icon={faTiktok}
