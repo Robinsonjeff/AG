@@ -1,5 +1,5 @@
 import React from "react";
-import aboutUsHeaderImage from "../../Assets/UpdatedMobileIcon.png";
+import aboutUsHeaderImage from "../../Assets/MobileAboutUsLogo.png";
 import { colors } from "../Colors";
 
 function MobileAboutUs(props) {

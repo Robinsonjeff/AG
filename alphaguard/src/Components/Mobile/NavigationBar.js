@@ -29,6 +29,8 @@ function NavigationBar(props) {
           width: "100vw",
           height: "7vh",
           backgroundColor: colors.lightGrey,
+          // backgroundColor: "red",
+
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

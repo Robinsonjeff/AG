@@ -32,6 +32,7 @@ import {
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+// import MobileHomeScreen from "./Components/Mobile/MobileHomeScreen";
 
 function App() {
   const [navClick, setNavClick] = useState(false);
@@ -53,6 +54,8 @@ function App() {
   const [showChooseUs, setShowChooseUs] = useState(false);
   const [showWhereWeService, setShowWhereWeService] = useState(false);
   const [showFAQ, setShowFAQ] = useState(false);
+
+  // const [showHomeScreen, setShowHomeScreen] = useState(true);
 
   const infoContainerRef = useRef(null);
 
@@ -253,7 +256,12 @@ function App() {
         </div>
       </BrowserView>
       <MobileView>
-        {/* NavigationBar Containing Div */}
+        {/* {showHomeScreen && (
+          <MobileHomeScreen
+            handleHomeScreenClick={setShowHomeScreen(!showHomeScreen)}
+          ></MobileHomeScreen>
+        )} */}
+
         <div
           style={{
             display: "flex",
@@ -294,6 +302,7 @@ function App() {
             >
               <FontAwesomeIcon icon={faBars} />
             </div>
+
             <img
               src={navImage}
               alt="headerImage"
@@ -327,7 +336,7 @@ function App() {
               >
                 <div
                   style={{
-                    marginTop: "30%",
+                    marginTop: "40%",
                     marginBottom: "20%",
                     display: "flex",
                   }}
@@ -340,7 +349,7 @@ function App() {
                     Book
                   </p>
 
-                  <p style={{ fontSize: 10, marginLeft: 2 }}> now!</p>
+                  <p style={{ fontSize: 10, marginLeft: 2 }}> Now!</p>
                 </div>
               </div>
             </div>
@@ -363,7 +372,7 @@ function App() {
                 // height: "23vh",
               }}
             >
-              <Navigators title="AboutUs" onClick={handleAboutUsClickMobile} />
+              <Navigators title="About Us" onClick={handleAboutUsClickMobile} />
               <Navigators
                 title="Why Choose Us"
                 onClick={handleChooseUsClickMobile}
