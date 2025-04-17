@@ -39,9 +39,13 @@ function App() {
   const navBarRef = useRef(null);
 
 const handleBookNowClick = () => {
+  console.log("booknowclicked")
+  console.log(window._gorilla)
   if (window._gorillaInitPortal) {
     window._gorillaInitPortal();
+    console.log("Window._gorillaInitPortal)
   } else {
+    console.log("fallback")
     // Fallback if the widget doesn't load
     window.open(
       "https://book.housecallpro.com/book/AlphaGuard/4aa60453411449049d25a2b4894894b0",
