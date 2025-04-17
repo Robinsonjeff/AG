@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { colors } from "../src/Components/Colors";
 import navImage from "./Assets/header.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
