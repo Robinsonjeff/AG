@@ -38,12 +38,41 @@ function App() {
   const [navClick, setNavClick] = useState(false);
   const navBarRef = useRef(null);
 
-  const handleBookNowClick = () => {
+const handleBookNowClick = () => {
+  if (window._gorillaInitPortal) {
+    window._gorillaInitPortal();
+  } else {
+    // Fallback if the widget doesn't load
     window.open(
       "https://book.housecallpro.com/book/AlphaGuard/4aa60453411449049d25a2b4894894b0",
       "_blank"
     );
+  }
+};
+
+  useEffect(() => {
+  if (window._gorilla) return;
+
+  window._gorilla = {
+    account_id: 'aaa507f15afcfbbfd6e1e4bbbd2b3582',
+    loaded: false,
+    chatbot: false,
   };
+
+  window._gorillaInitPortal = function () {
+    if (window._gorilla.loaded) return;
+    window._gorilla.loaded = true;
+    const a = document.createElement('script');
+    a.type = 'text/javascript';
+    a.async = true;
+    a.defer = true;
+    a.src = 'https://app.gorilladesk.com/js/portal/portal.js';
+    document.body.appendChild(a);
+  };
+}, []);
+
+
+  
 
   const handleNavClick = () => {
     setNavClick(!navClick);
