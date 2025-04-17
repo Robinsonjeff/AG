@@ -40,7 +40,7 @@ function App() {
 
 const handleBookNowClick = () => {
   console.log("booknowclicked")
-  console.log(window._gorilla)
+ 
   if (window._gorillaInitPortal) {
     window._gorillaInitPortal();
     console.log("Window._gorillaInitPortal)
